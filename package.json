@@ -1,0 +1,25 @@
+{
+	"name": "turbo-remix-template",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"check": "turbo run check",
+		"check:write": "turbo run check:write",
+		"clean": "npm exec --workspaces -- npx rimraf node_modules .turbo && turbo run clean && npx rimraf node_modules .turbo",
+		"db:create:local": "pnpm db:clean:local && dotenv -e ./env/.env.local -- turbo run setup --filter=@repo/prisma-config",
+		"db:clean:local": "rimraf db/db.sqlite db/db.sqlite-journal"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@repo/biome-config": "workspace:*",
+		"dotenv-cli": "^7.4.2",
+		"rimraf": "^6.0.1",
+		"turbo": "^2.2.3",
+		"typescript": "5.5.4"
+	},
+	"packageManager": "pnpm@8.15.6",
+	"engines": {
+		"node": ">=20"
+	}
+}

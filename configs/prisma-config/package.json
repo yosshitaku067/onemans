@@ -1,0 +1,19 @@
+{
+	"name": "@repo/prisma-config",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"setup": "prisma generate && prisma migrate dev --name init",
+		"studio": "prisma studio"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"prisma": "5.22.0"
+	},
+	"dependencies": {
+		"@prisma/client": "5.22.0"
+	}
+}

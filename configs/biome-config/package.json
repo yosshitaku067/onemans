@@ -1,0 +1,19 @@
+{
+	"name": "@repo/biome-config",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"keywords": ["biome"],
+	"author": "yosshitaku067",
+	"license": "MIT",
+	"description": "biome config",
+	"exports": {
+		"./biome": "./biome.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
+}

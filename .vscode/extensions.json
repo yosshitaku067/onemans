@@ -1,0 +1,13 @@
+{
+	"unwantedRecommendations": [
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"dsznajder.es7-react-js-snippets",
+		"eamodio.gitlens",
+		"ms-ceintl.vscode-language-pack-ja",
+		"ms-vscode.vscode-typescript-next",
+		"biomejs.biome",
+		"bradlc.vscode-tailwindcss",
+		"irongeek.vscode-env"
+	]
+}
