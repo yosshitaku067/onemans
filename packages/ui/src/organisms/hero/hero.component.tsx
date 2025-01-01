@@ -1,3 +1,5 @@
+import { Button } from "@/__generated__/components/ui/button";
+import { MenuIcon } from "lucide-react";
 import type React from "react";
 
 type Props = {};
@@ -27,9 +29,6 @@ export const Hero: React.FC<Props> = () => {
 					</a>
 
 					<nav className="hidden gap-12 lg:flex">
-						<a href="/" className="font-semibold text-indigo-500 text-lg">
-							Home
-						</a>
 						<a
 							href="/"
 							className="font-semibold text-gray-600 text-lg transition duration-100 hover:text-indigo-500 active:text-indigo-700"
@@ -42,56 +41,30 @@ export const Hero: React.FC<Props> = () => {
 						>
 							Blogs
 						</a>
-						<a
-							href="/"
-							className="font-semibold text-gray-600 text-lg transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-						>
-							About
-						</a>
 					</nav>
 
-					<a
-						href="/"
-						className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center font-semibold text-gray-500 text-sm outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-					>
-						Contact Sales
-					</a>
+					<div className="hidden lg:inline-block" />
 
-					<button
-						type="button"
-						className="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 font-semibold text-gray-500 text-sm ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							className="h-6 w-6"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-						>
-							<title>sample</title>
-							<path
-								fill-rule="evenodd"
-								d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-						Menu
-					</button>
+					<Button type="button" variant="ghost" size="icon">
+						<MenuIcon />
+						<span className="sr-only">Menu</span>
+					</Button>
 				</header>
 
 				<section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
 					<div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
 						<p className="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">
-							Very proud to introduce
+							Software Engineer
 						</p>
 
 						<h1 className="mb-8 font-bold text-4xl text-black sm:text-5xl md:mb-12 md:text-6xl">
-							Revolutionary way to build the web
+							One Man's Portfolio
 						</h1>
 
-						<p className="mb-8 text-gray-500 leading-relaxed md:mb-12 lg:w-4/5 xl:text-lg">
-							This is a section of some simple filler text, also known as
-							placeholder text. It shares some characteristics of a real written
-							text but is random.
+						<p className="mb-8 break-keep text-gray-500 leading-relaxed md:mb-12 lg:w-4/5 xl:text-lg">
+							30代中堅ソフトウェアエンジニアのポートフォリオサイトです。
+							<wbr />
+							これまでの経歴のまとめやブログでの情報発信をしております。
 						</p>
 
 						<div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
@@ -99,14 +72,14 @@ export const Hero: React.FC<Props> = () => {
 								href="/"
 								className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center font-semibold text-sm text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
 							>
-								Start now
+								経歴を見る
 							</a>
 
 							<a
 								href="/"
 								className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center font-semibold text-gray-500 text-sm outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
 							>
-								Take tour
+								ブログを見る
 							</a>
 						</div>
 					</div>
